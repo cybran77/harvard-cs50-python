@@ -1,9 +1,10 @@
-# Get two numbers from the user
-x = float(input("What's x? "))
-y = float(input("What's y? "))
+def main():
+    x = float(input("What's x? "))
+    print(f"The square of {x} is {square(x)}")
 
-# Divide and round the result to two decimal places
-z = round(x / y, 2)
 
-# Print the result to the user
-print(f"{z:.2f}")
+def square(n) -> float:
+    return pow(n, 2)
+
+
+main()
