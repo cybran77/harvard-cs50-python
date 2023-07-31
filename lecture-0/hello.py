@@ -2,3 +2,4 @@
 name = input("What's your name? ")
 print("hello \"friend\",", end=" ")
 print(name, end="!\n")
+print(f"hello, {name}!")
