@@ -1,7 +1,9 @@
-# 
+# Get two numbers from the user
 x = float(input("What's x? "))
 y = float(input("What's y? "))
 
-z = round(x + y)
+# Divide and round the result to two decimal places
+z = round(x / y, 2)
 
-print(f"{z:,}")
+# Print the result to the user
+print(f"{z:.2f}")
