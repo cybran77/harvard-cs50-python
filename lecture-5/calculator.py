@@ -1,5 +1,5 @@
 def main():
-    x = int(input("x: "))
+    x = input("x: ")
     print("x squared: " + square(x))
 
 
