@@ -1,6 +1,9 @@
+import re
+
+
 email = input("Enter your email: ").strip()
 
-if "@" in email and "." in email:
-    print("Valid email")
+if re.search(r"^[^@]+@[^@]+\.edu$", email):
+    print("Valid")
 else:
-    print("Invalid email")
+    print("Invalid")
