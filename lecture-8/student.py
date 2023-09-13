@@ -7,21 +7,19 @@ class Student:
         self.name = name
         self.house = house
 
-    # def get_name(self):
-    #     return self.name
-
-    # def get_house(self):
-    #     return self.house
+    def __str__(self):
+        return f"{self.name} from {self.house}"
 
 
 def main():
     student = get_student()
     if student.name == "Padma":
         student.house = "Ravenclaw"
-    print(f"{student.name} from {student.house}")
+    # print(f"{student.name} from {student.house}")
+    print(student)
 
 
-def get_student():    
+def get_student():
     name = input("Name: ")
     house = input("House: ")
     return Student(name, house)
