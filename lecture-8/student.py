@@ -1,7 +1,5 @@
 class Student:
     def __init__(self, name, house=None):
-        if not name:
-            raise ValueError("Name is required")
         self.name = name
         self.house = house
 
@@ -32,6 +30,7 @@ class Student:
 def main():
     student = get_student()
     print(student)
+    print(student._house)
 
 
 def get_student():
