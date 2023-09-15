@@ -26,17 +26,16 @@ class Student:
             raise ValueError("House is invalid")
         self._house = house
 
+    @classmethod
+    def create(cls):
+        name = input("Name: ")
+        house = input("House: ")
+        return cls(name, house)
+
 
 def main():
-    student = get_student()
+    student = Student.create()
     print(student)
-    print(student._house)
-
-
-def get_student():
-    name = input("Name: ")
-    house = input("House: ")
-    return Student(name, house)
 
 
 if __name__ == "__main__":
